@@ -1,2 +1,0 @@
-# dynamicmenu
-Created with CodeSandbox

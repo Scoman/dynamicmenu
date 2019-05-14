@@ -2,22 +2,47 @@
 <html lang = "en">
 
 <head>
-	<title>Parcel Sandbox</title>
+	<title>Restaurant Dynamic Menue</title>
 	<meta charset="UTF-8" />
-
+	<link rel = "stylesheet" type = "text/css" href = "src/styles.css"/>
 </head>
 
 <body>
+<header>
 	<h1>Interactive Restaurant Menu</h1>
-	<p>Include information outlining the restaurant, and a dynamic menu suiting mobile.</p>
-	<div id="app"></div>
+	<p>
+		Include information outlining the restaurant, and a dynamic menu suiting mobile.
+	</p>
+</header>
+<div id="fc">
+	<section>
+		<h2>This is the main body of my page</h2>
+		<article>
+			<h3>Article title</h3>
+			This is a bunch of text that will be left aligned under the main title of the page, but still within the main center section of the page.
+		</article>
+		<article>
+			<h3>Article title</h3>
+			Here is some more text that will be right aligned under the first paragraph, but still within the main center section of the page.
+		</article>
+		<div id="app">Initial information</div>
+		<div id="next">Next info</div>
+	</section>
+	<aside>
+		An aside.
+	</aside>
+</div>
+<footer>
+	thank you and please visit again soon!
+</footer>
 
-    <script>
-        window.onload = function() {
-            document.getElementById("app").innerHTML = "test";
-        }
+<script>
+	window.onload = function() {
+		document.getElementById("app").innerHTML = "test";
+	}
 
-    </script>
+</script>
+
 </body>
 
 </html>

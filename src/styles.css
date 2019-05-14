@@ -1,3 +1,35 @@
-body {
-  font-family: sans-serif;
+html, body {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+}
+
+header {
+  border: 1px solid grey;
+}
+
+#fc {
+  display: flex;
+  flex-flow: row; /* alternative is column */
+}
+
+section {
+  flex: 8;
+  border: 1px solid grey;
+  padding: 0.5em;
+}
+
+aside {
+  flex: 2;
+  border: 1px solid grey;
+  padding: 0.5em;
+}
+
+footer {
+  border: 1px solid grey;
+  padding: 1em;
+}
+
+#app {
+  background-color: beige;
+  color: red;
 }

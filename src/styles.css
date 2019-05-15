@@ -1,35 +1,66 @@
 html, body {
-  font-family: Tahoma, sans-serif;
-  text-align: center;
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    height: 100%;
 }
 
+#main-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+/* Header Styling */
 header {
-  border: 1px solid grey;
+    flex: 1;
+    border: 1px solid burlywood;
+}
+
+.logo {
+    float: left;
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+nav {
+    flex: 1;
+    border: 1px solid burlywood;
+    padding: 0.5em;
+}
+
+.nav > li {
+    display: inline-block;
+    padding: 0 0.5em;
+}
+
+.side-nav {
+    transform: rotate(-90deg);
+}
+
+/* End Header Styling */
+main {
+    flex: 19;
+    border: 1px solid burlywood;
+    padding: 0.5em;
 }
 
 #fc {
-  display: flex;
-  flex-flow: row; /* alternative is column */
+    flex: 18;
+    display: flex;
+    flex-direction: row; /* alternative is column */
 }
 
 section {
-  flex: 8;
-  border: 1px solid grey;
-  padding: 0.5em;
-}
-
-aside {
-  flex: 2;
-  border: 1px solid grey;
-  padding: 0.5em;
+    flex: 8;
+    padding: 0.5em;
 }
 
 footer {
-  border: 1px solid grey;
-  padding: 1em;
+    flex: 1;
+    border: 1px solid burlywood;
+    padding: 1em;
 }
 
 #app {
-  background-color: beige;
-  color: red;
+    background-color: beige;
+    color: red;
 }

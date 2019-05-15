@@ -1,45 +1,71 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 <head>
-	<title>Restaurant Dynamic Menue</title>
-	<meta charset="UTF-8" />
-	<link rel = "stylesheet" type = "text/css" href = "src/styles.css"/>
+    <title>Restaurant Dynamic Menue</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/styles.css"/>
 </head>
 
 <body>
-<header>
-	<h1>Interactive Restaurant Menu</h1>
-	<p>
-		Include information outlining the restaurant, and a dynamic menu suiting mobile.
-	</p>
-</header>
-<div id="fc">
-	<section>
-		<h2>This is the main body of my page</h2>
-		<article>
-			<h3>Article title</h3>
-			This is a bunch of text that will be left aligned under the main title of the page, but still within the main center section of the page.
-		</article>
-		<article>
-			<h3>Article title</h3>
-			Here is some more text that will be right aligned under the first paragraph, but still within the main center section of the page.
-		</article>
-		<div id="app">Initial information</div>
-		<div id="next">Next info</div>
-	</section>
-	<aside>
-		An aside.
-	</aside>
+
+<div id="main-wrapper">
+
+    <header>
+        <h1 class="logo">Interactive Restaurant Menu</h1>
+        <nav>
+            <ul class="nav top-nav">
+                <li>Our Menu</li>
+                <li>In Home Dining</li>
+                <li>Delivered to you</li>
+                <li>Healthy Life</li>
+                <li>Enjoy your time</li>
+                <li>Reusable Containers</li>
+                <li>Our Subscription Service</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="fc">
+        <nav>
+            <ul class="nav side-nav">
+                <li>Entree</li>
+                <li>Mains</li>
+                <li>Sides</li>
+                <li>Dessert</li>
+                <li>Drinks</li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>This is the main body of my page</h2>
+                <article>
+                    <h3>The Aim of this Experiment</h3>
+                    The aim is to establish a single page menu app that has an HTML structure optimised for SEO,
+                    but has dynamic functionality maximised to suite the user trying to find the perfect meal.
+                </article>
+                <article>
+                    <h3>Next Steps</h3>
+                    Include information outlining the restaurant, and a dynamic menu suiting mobile.
+                </article>
+                <div id="app">Initial information</div>
+                <div id="next">Next info</div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        thank you and please visit again soon!
+    </footer>
 </div>
-<footer>
-	thank you and please visit again soon!
-</footer>
 
 <script>
-	window.onload = function() {
-		document.getElementById("app").innerHTML = "test";
-	}
+    window.onload = function () {
+        document.getElementById("app").innerHTML = "test";
+    }
 
 </script>
 
